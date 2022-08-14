@@ -1,0 +1,8 @@
+.panel-create-join {
+  min-height: 350px;
+}
+
+.active {
+  color: #fff;
+  background: #000;
+}

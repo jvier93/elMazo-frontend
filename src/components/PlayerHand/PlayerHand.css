@@ -1,0 +1,87 @@
+.playerHand {
+  width: 630px;
+  height: 120px;
+  border: 2px dotted #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.turn {
+  box-shadow: inset 0 0 5px white, 0 0 5px #fff5ff;
+}
+
+.BarajaJugador {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.boton {
+  font-family: "Mate SC", serif;
+  z-index: 2;
+  position: absolute;
+  bottom: 0em;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 0.5em;
+  padding-bottom: 1.2em;
+  padding-right: 1.2em;
+  padding-left: 1em;
+  right: 0.13em;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.boton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 1);
+}
+
+.juegoDePalos {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  width: 75px;
+  height: 108px;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    #658fcd,
+    #427edb,
+    #186be5,
+    #0055ec,
+    #1d38ed
+  );
+  filter: alpha(opacity=70);
+
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+}
+
+.juegoDeNumeros {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  width: 75px;
+  height: 108px;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    #c9b179,
+    #d1af65,
+    #daac50,
+    #e3a93a,
+    #eda51d
+  );
+  filter: alpha(opacity=70);
+
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+}
+
+.prueba {
+  position: relative;
+}

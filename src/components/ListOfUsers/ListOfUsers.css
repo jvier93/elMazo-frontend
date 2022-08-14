@@ -1,0 +1,17 @@
+.listOfUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  color: #fff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 10px;
+  height: 20px;
+  width: 200px;
+}

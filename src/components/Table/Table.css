@@ -1,0 +1,14 @@
+.table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border: 2px dotted #ffffff;
+  border-radius: 15px 15px 15px 15px;
+
+  color: #ffffff;
+}
+
+.table p {
+  font-family: "Mate SC", serif;
+}
