@@ -59,7 +59,7 @@ export const PlayerHand = ({
     } else {
       setShowButton(false);
     }
-  }, [hands]);
+  }, [hands, gameStatus, inTurn, myHand]);
 
   function handleOnDragEnd(event) {
     const handCards = hand.slice();

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./carta.css";
-import { socket } from "../Socket";
 
 export function Carta({
   functionToExecute = () => {},
@@ -32,7 +31,7 @@ export function Carta({
         src={width > 640 ? (inGame ? srcInGame : src) : src75}
       ></img>
 
-      <a
+      <div
         className={
           showButton
             ? " focus:outline-none text-xs sm:text-base h-8 w-full font-Mate   text-center rounded-b-sm  text-white  bg-gray-600 bg-opacity-60 text-opacity-80 hover:text-opacity-100  hover:bg-opacity-90 absolute bottom-0"
@@ -43,7 +42,7 @@ export function Carta({
         }}
       >
         {textToShow}
-      </a>
+      </div>
     </div>
   );
 }

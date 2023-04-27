@@ -5,7 +5,6 @@ import { socket } from "../Socket";
 import { JoinRoom } from "../JoinRoom";
 
 import "./Rooms.css";
-import { usePrueba } from "../../hooks/usePrueba";
 export const Rooms = ({ nombre, roomList }) => {
   useEffect(() => {
     socket.emit("createUser", nombre);

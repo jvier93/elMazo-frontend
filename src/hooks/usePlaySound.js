@@ -1,4 +1,3 @@
-import React from "react";
 import useSound from "use-sound";
 import music from "../sounds/music.mp3";
 import deslizar1 from "../sounds/deslizar1.mp3";

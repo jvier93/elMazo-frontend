@@ -41,7 +41,7 @@ export const ModalNotification = function ({
     return function cleanup() {
       socket.off("playerNotification", handlePlayerNotification);
     };
-  }, []);
+  }, [setModalMessage, setModalMode, setShowModal]);
 
   return (
     <div
