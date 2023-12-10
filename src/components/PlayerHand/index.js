@@ -16,6 +16,7 @@ export const PlayerHand = ({
 }) => {
   const [showButton, setShowButton] = useState(false);
   const [hand, setHand] = useState([]);
+  console.log(hand);
   const [showFront, setShowFront] = useState(false);
 
   useEffect(() => {
@@ -107,7 +108,13 @@ export const PlayerHand = ({
                 >
                   {hand.map(
                     (
-                      { _imgFront, _imgFrontGame, _inGame, _imgFront75 },
+                      {
+                        _imgFront,
+                        _imgFrontGame,
+                        _imgFrontGame75,
+                        _inGame,
+                        _imgFront75,
+                      },
                       index
                     ) => {
                       return (
@@ -126,7 +133,6 @@ export const PlayerHand = ({
                                 functionToExecute={cutMode ? cutGame : playCard}
                                 functionToCutGame={cutGame}
                                 inGame={_inGame}
-                                srcInGame={_imgFrontGame}
                                 cardIn={"player"}
                                 myHand={myHand}
                                 showButton={
@@ -139,6 +145,8 @@ export const PlayerHand = ({
                                 index={index}
                                 src={_imgFront}
                                 src75={_imgFront75}
+                                srcInGame={_imgFrontGame}
+                                srcInGame75={_imgFrontGame75}
                                 sound={sound}
                               ></Carta>
                             </div>

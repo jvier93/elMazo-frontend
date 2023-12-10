@@ -5,14 +5,14 @@ export function Carta({
   functionToExecute = () => {},
   textToShow,
   inGame = false,
-  srcInGame,
   src,
   src75,
+  srcInGame,
+  srcInGame75,
   index = null,
   showButton = false,
 }) {
   const [width, setWidth] = useState(window.innerWidth);
-
   useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth);
@@ -28,7 +28,15 @@ export function Carta({
     <div className="relative  ">
       <img
         alt="Imagen de la carta"
-        src={width > 640 ? (inGame ? srcInGame : src) : src75}
+        src={
+          width > 640
+            ? inGame
+              ? srcInGame
+              : src
+            : inGame
+            ? srcInGame75
+            : src75
+        }
       ></img>
 
       <div
