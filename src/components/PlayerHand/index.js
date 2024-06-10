@@ -55,7 +55,7 @@ export const PlayerHand = ({
   useEffect(() => {
     setHand(hands);
 
-    if (myHand && inTurn && hands.length === 8 && gameStatus === "iniciado") {
+    if (myHand && inTurn && hands.length === 8 && gameStatus !== "pausa") {
       setShowButton(true);
     } else {
       setShowButton(false);

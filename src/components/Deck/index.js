@@ -31,7 +31,7 @@ export function Deck({ sound }) {
       if (
         playerInTurn._socketId === socket.id &&
         playerInTurn._hand.length === 7 &&
-        gameStatus === "iniciado"
+        gameStatus !== "pausa"
       ) {
         setShowButton(true);
       } else {

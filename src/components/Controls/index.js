@@ -15,8 +15,8 @@ export const Controls = ({
   modalMessage,
   setModalMessage,
 }) => {
-  function startGame() {
-    socket.emit("startGame");
+  function prepareRound() {
+    socket.emit("prepareRound");
   }
 
   function handleClickPlayerLeave() {
@@ -41,7 +41,7 @@ export const Controls = ({
             <div className=" md:flex  md:flex-col ">
               <button
                 className="w-20 text-sm rounded hover:text-white font-Mate bg-gray-400 px-2 mx-1 md:my-1"
-                onClick={startGame}
+                onClick={prepareRound}
               >
                 Iniciar
               </button>
